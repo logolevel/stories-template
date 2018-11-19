@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .wrap {max-width: 1440px; margin: 0 auto; border: 1px solid pink;}
+        .wrap {
+            max-width: 1440px;
+            margin: 0 auto;
+            border: 1px solid pink;
+        }
 
         .b-stories {
             display: flex;
@@ -14,10 +19,12 @@
             align-items: flex-start;
             flex-wrap: wrap;
         }
+
         .b-stories__link {
             display: inline-block;
             vertical-align: top;
         }
+
         .b-stories__picture img {
             width: 100%;
             height: auto;
@@ -50,8 +57,58 @@
             margin-top: -15%;
             width: 37.85%;
         }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--0 {
+                order: 1;
+                margin-bottom: 40px;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--1 {
+                order: 2;
+                width: 40%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--2 {
+                order: 3;
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--3 {
+                order: 6;
+                margin-top: 5%;
+                width: 40%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--4 {
+                order: 5;
+                margin-top: 0;
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 1023px) {
+            .b-stories__link--5 {
+                order: 4;
+                margin: 40px 0;
+                width: 100%;
+            }
+        }
+
+
+
     </style>
 </head>
+
 <body>
     <div class="wrap">
 
@@ -70,7 +127,7 @@
                     <span class="b-stories__price">10$</span>
                 </div>
             </a>
-            
+
             <a href="#!" class="b-stories__link b-stories__link--1">
                 <div class="b-stories__picture">
                     <picture>
@@ -83,7 +140,7 @@
                     <span class="b-stories__price">20$</span>
                 </div>
             </a>
-            
+
             <a href="#!" class="b-stories__link b-stories__link--2">
                 <div class="b-stories__picture">
                     <picture>
@@ -96,7 +153,7 @@
                     <span class="b-stories__price">30$</span>
                 </div>
             </a>
-<!-- next row -->
+            <!-- next row -->
             <a href="#!" class="b-stories__link b-stories__link--3">
                 <div class="b-stories__picture">
                     <picture>
@@ -142,4 +199,5 @@
 
     </div>
 </body>
+
 </html>
